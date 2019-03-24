@@ -1,0 +1,136 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>Home Page - Fast New York</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- can put more than 1 link rel-->
+</head>
+    <body>
+      <body bgcolor="#ffcba4">
+      <div id="header">
+        <p><a href="index.html"><img src="fastnewyork.png" style="float:left"
+    		width="100" height="119"/></a>
+        <h1 style="font-family: verdana">Fast New York Restaurant</h1>
+          <em>Top Tier Fast Food Service</em>
+      </p>
+      </div>
+      <div id="navbar">
+        <ul>
+          <li><a href="index.html" style="text-decoration: none; color:black">HOME</a></li>
+          <li><a href="menu.html" style="text-decoration: none; color:black">MENU</a></li>
+          <li><a href="about.html" style="text-decoration: none; color:black">ABOUT US</a></li>
+        </ul>
+      </div>
+
+      <div class="main">
+          <!-- Image SlideShow with Java Script -->
+        <div class="slideshow-container">
+
+        <center><div class="mySlides">
+          <img src="pic0.jpg" style="width:40%">
+          <div class="text">Pepperoni Pizza</div>
+        </div>
+
+        <div class="mySlides">
+          <img src="pic1.jpg" style="width:40%">
+          <div class="text">Shrimp Quinoa Salad</div>
+        </div>
+
+        <div class="mySlides">
+          <img src="pic2.jpg" style="width:40%">
+          <div class="text">Juicy Lucy Crunch Burger</div>
+        </div>
+
+        <div class="mySlides">
+          <img src="pic3.jpg" style="width:40%">
+          <div class="text">Chocolate Trifle</div>
+        </div></center>
+
+        </div>
+                                        <br/><br/>
+                                        <br/><br/>
+
+        <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
+        <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace("active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 4000); // Change image every 4 seconds
+        }
+        </script>
+
+        <!-- Main Content Below -->
+        <h1><dl><dt>Our Mission</dt></dl></h1>
+          <dd>Here at Fast Food New York, we make and serve the freshest, most delicious foods and drinks quickly
+              and courteously in the modern, well-merchandised restaurant here in New York City.
+              Our commitment to premium ingredients, signature recipies, and family-friendly
+              dining experiences is what has defined our restaurant for years.</dd>
+
+                                        <br/><br/>
+                                        <br/><br/>
+                                        <br/><br/>
+                                        <br/><br/>
+                                        <br/><br/>
+
+          <h1 style="text-align:center">Fast New York Restaurant 360° Tour</h1>
+      		<center><iframe allow="autoplay" width="735px" height="414px" src="https://www.youtube.com/embed/CLKvfaqTLEQ?modestbranding=1&amp;fs=0&amp;rel=0&amp;hd=1&amp;disablekb=0&amp;showinfo=0&amp;iv_load_policy=0&amp;autoplay=1&amp;loop=0&amp;controls=0"
+          frameborder="0" allowfullscreen></center></iframe>
+
+              <!-- Weekly Specials Aside tag-->
+          <aside style="font-size: larger; font-style: italic; color: green; align: right; width= 200px;">
+            <h1>Weekly Specials</h1>
+            <p>BBQ Chicken ----------------------------------------- $10.99</p>
+            <p>Seafood Pasta ---------------------------------------- $22.59</p>
+            <p>Mediterranean Wrap ---------------------------------- $5.00</p>
+            <p>Umami Burger ---------------------------------------- $15.00</p>
+
+<p>For more choices, <a href="menu.html" style="text-decoration: none; color:green">visit our menu</a>.</p>
+          </aside>
+
+          <article>
+            <h2>Reviews From Our Customers</h2>
+              <p> New York Times - <i><q>The Fast New York Restaurant is the best of this CENTURY.</q></i></p>
+              <p> A Yelp Customer - <i><q>This place is my go to spot. Great service, fun atmosphere, and great food.</q></i></p>
+          </article>
+      </div>
+
+
+  <div id="footer">
+    <ul>
+      <li><a href="index.html" style="text-decoration: none; color:black">Home</a></li>
+      <li><a href="menu.html" style="text-decoration: none; color:black">Menu</a></li>
+      <li><a href="about.html" style="text-decoration: none; color:black">About Us</a></li>
+    </ul>
+    <p style="font-size: 13px">&copy; 2019 Fast New York. All rights reserved.
+    <address>
+      300 Jay St. Brooklyn, NY 11201 USA <br/> TEL: (999)-555-YORK
+    </address>
+    </p>
+  </div>
+
+  </body>
+</html>
